@@ -1,0 +1,103 @@
+.side-panel {
+  width: 300px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* General styles for the page */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Top Menu */
+.top-menu {
+  display: flex;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.top-menu button {
+  background-color: #444;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.top-menu button:hover {
+  background-color: #555;
+}
+
+/* Main Layout */
+.layout {
+  display: flex;
+  flex: 1;
+  margin-top: 20px; /* Push layout down from the top menu */
+}
+
+/* Side Panel */
+.side-panel {
+  width: 300px; /* Fixed width for the side panel */
+  background-color: #fff;
+  padding: 20px;
+  border-right: 2px solid #ddd; /* To separate it from the preview */
+  height: 100vh; /* Full height of the page */
+  overflow-y: auto; /* Scroll if the content overflows */
+}
+
+/* Preview */
+.preview-container {
+  flex: 1; /* Takes the remaining space */
+  background-color: #fff;
+  padding: 20px;
+  height: 100vh; /* Full height of the page */
+  overflow-y: auto;
+}
+
+/* App.css or corresponding CSS file */
+
+/* 3D Preview Container */
+.preview-3d-container {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+}
