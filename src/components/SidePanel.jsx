@@ -35,7 +35,7 @@ const SidePanel = ({
                     <input
                         type="number"
                         value={height}
-                        onChange={(e) => setHeight(e.target.value)}
+                        onChange={(e) => setHeight(parseFloat(e.target.value))}
                     />
                 </label>
 
@@ -44,7 +44,7 @@ const SidePanel = ({
                     <input
                         type="number"
                         value={width}
-                        onChange={(e) => setWidth(e.target.value)}
+                        onChange={(e) => setWidth(parseFloat(e.target.value))}
                     />
                 </label>
 
@@ -53,7 +53,7 @@ const SidePanel = ({
                     <input
                         type="number"
                         value={depth}
-                        onChange={(e) => setDepth(e.target.value)}
+                        onChange={(e) => setDepth(parseFloat(e.target.value))}
                     />
                 </label>
 
@@ -62,7 +62,7 @@ const SidePanel = ({
                     <input
                         type="number"
                         value={materialThickness}
-                        onChange={(e) => setMaterialThickness(e.target.value)}
+                        onChange={(e) => setMaterialThickness(parseFloat(e.target.value))}
                     />
                 </label>
 
@@ -71,7 +71,7 @@ const SidePanel = ({
                     <input
                         type="number"
                         value={numShelves}
-                        onChange={(e) => setNumShelves(Number.parseInt(e.target.value))}
+                        onChange={(e) => setNumShelves(parseInt(e.target.value))}
                     />
                 </label>
                 
@@ -82,7 +82,7 @@ const SidePanel = ({
                     <input
                         type="number"
                         value={toeKick}
-                        onChange={(e) => setToeKick(e.target.value)}
+                        onChange={(e) => setToeKick(parseFloat(e.target.value))}
                         disabled={isWallCabinet}
                     />
                 </label>
@@ -92,7 +92,7 @@ const SidePanel = ({
                     <input
                         type="number"
                         value={supportHeight}
-                        onChange={(e) => setSupportHeight(e.target.value)}
+                        onChange={(e) => setSupportHeight(parseFloat(e.target.value))}
                         disabled={isWallCabinet}
                     />
                 </label>
@@ -112,7 +112,7 @@ const SidePanel = ({
                     <input
                         type="number"
                         value={doors}
-                        onChange={(e) => setDoors(e.target.value)}
+                        onChange={(e) => setDoors(parseInt(e.target.value))}
                     />
                 </label>
 
