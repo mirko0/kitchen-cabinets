@@ -78,19 +78,19 @@ ${toeKick ? `
 
 ${!isWallCabinet ? `
 5. Support (x2):
-    - Height: ${supportHeight} cm
-    - Width: ${supportWidth} cm
-    - Size: ${supportSize} m2
-    - Total Size: ${supportSize * 2} m2
+   - Height: ${supportHeight} cm
+   - Width: ${supportWidth} cm
+   - Size: ${supportSize} m2
+   - Total Size: ${supportSize * 2} m2
 ` : ''}
 
 
 ${numShelves > 0 ? `
-5. Shelf (x${numShelves}):
-    - Height: ${shelfHeight} cm
-    - Width: ${shelfWidth} cm
-    - Size: ${shelfSize} m2
-    - Total Size: ${shelfSize * numShelves} m2
+6. Shelf (x${numShelves}):
+   - Height: ${shelfHeight} cm
+   - Width: ${shelfWidth} cm
+   - Size: ${shelfSize} m2
+   - Total Size: ${shelfSize * numShelves} m2
 ` : ''}
     `;
   };

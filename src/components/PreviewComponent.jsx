@@ -109,7 +109,7 @@ const PreviewComponent = ({
 
             for (let i = 1; i <= numShelves; i++) {
                 const yPosition = i * shelfHeight;
-                console.log("YPos" + i + ": " + yPosition)
+                // console.log("YPos" + i + ": " + yPosition)
                 const wMinusThickness = w - materialThickness;
 
                 // Add 3D shelf vertices (top and bottom edges)
@@ -153,7 +153,7 @@ const PreviewComponent = ({
 
             // Concatenate the shelf vertices with the existing vertices array
             vertices = new Float32Array([...vertices, ...shelfVertices]);
-            console.log("=================== END ======================")
+            // console.log("=================== END ======================")
         }
 
 
